@@ -1,0 +1,214 @@
+.frameChild {
+  height: 70.3px;
+  width: 85.2px;
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.heading {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.sectionTitle {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.frameParent,
+.sectionTitle,
+.testimonialInner {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  height: 152.3px;
+  width: 560px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-63xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+}
+.testimonialInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button,
+.content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--black);
+  padding: var(--padding-xs) var(--padding-2xs);
+  background-color: transparent;
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-31xl);
+  box-sizing: border-box;
+  align-items: center;
+}
+.content1 {
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  min-width: 749px;
+  max-width: 100%;
+}
+.icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button1,
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 1px solid var(--black);
+  padding: var(--padding-xs) var(--padding-2xs);
+  background-color: transparent;
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-31xl);
+  box-sizing: border-box;
+}
+.content {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.dot,
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--black);
+}
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  background-color: var(--color-gray-100);
+}
+.sliderDots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  gap: var(--gap-4xs);
+}
+.container,
+.sliderDotsWrapper,
+.testimonial {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.sliderDotsWrapper {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.container,
+.testimonial {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  font-size: var(--text-regular-normal-size);
+}
+.testimonial {
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  padding: var(--padding-93xl) var(--padding-45xl);
+  box-sizing: border-box;
+  gap: var(--gap-61xl);
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--heading-h2-size);
+  color: var(--black);
+  font-family: var(--text-small-link);
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-19xl);
+    line-height: 46px;
+  }
+  .content1 {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+  .testimonial {
+    padding-top: var(--padding-54xl);
+    padding-bottom: var(--padding-54xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content {
+    gap: var(--gap-base);
+  }
+  .container {
+    gap: var(--gap-5xl);
+  }
+  .testimonial {
+    gap: var(--gap-21xl);
+    padding-left: var(--padding-13xl);
+    padding-right: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-10xl);
+    line-height: 35px;
+  }
+  .testimonial {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-28xl);
+    padding-bottom: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+}

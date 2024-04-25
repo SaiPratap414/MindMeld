@@ -1,0 +1,217 @@
+.heading {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.content,
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sectionTitle {
+  align-items: flex-start;
+  justify-content: center;
+}
+.vectorIcon {
+  height: 54px;
+  width: 53.9px;
+  position: relative;
+}
+.conditionCheckerIcon {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+  margin-left: -4px;
+}
+.content2,
+.valueComparator,
+.vectorParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content2,
+.valueComparator {
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.content2 {
+  width: 1312px;
+  overflow-x: auto;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-29xl);
+}
+.dot,
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--black);
+}
+.dot1,
+.dot2,
+.dot3,
+.dot4 {
+  background-color: var(--color-gray-100);
+}
+.sliderDots,
+.sliderDotsWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sliderDots {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.sliderDotsWrapper {
+  flex-direction: column;
+  padding: var(--padding-xl) 0 0;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--black);
+  padding: var(--padding-xs) var(--padding-2xs);
+  background-color: transparent;
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-31xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.button1 {
+  cursor: pointer;
+  border: 1px solid var(--black);
+  padding: var(--padding-xs) var(--padding-2xs);
+  background-color: transparent;
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-31xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sliderButtons {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.content1,
+.content3,
+.row,
+.sliderButtons,
+.team {
+  display: flex;
+  align-items: flex-start;
+}
+.content3 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.content1,
+.row,
+.team {
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.row {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-29xl);
+}
+.content1,
+.team {
+  align-self: stretch;
+  flex-direction: row;
+  font-size: var(--text-large-semi-bold-size);
+  color: var(--black);
+}
+.team {
+  background-color: var(--color-lavender-100);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-93xl) var(--padding-45xl);
+  box-sizing: border-box;
+  gap: var(--gap-61xl);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--heading-h2-size);
+  color: var(--color-dodgerblue-200);
+  font-family: var(--text-small-link);
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-19xl);
+    line-height: 46px;
+  }
+  .team {
+    padding-top: var(--padding-54xl);
+    padding-bottom: var(--padding-54xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content2,
+  .row {
+    gap: var(--gap-5xl);
+  }
+  .content1 {
+    gap: var(--gap-29xl);
+  }
+  .team {
+    gap: var(--gap-21xl);
+    padding: var(--padding-28xl) var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-10xl);
+    line-height: 35px;
+  }
+  .content3,
+  .valueComparator {
+    flex-wrap: wrap;
+  }
+  .content1 {
+    gap: var(--gap-5xl);
+  }
+  .team {
+    gap: var(--gap-xl);
+  }
+}

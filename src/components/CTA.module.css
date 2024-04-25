@@ -1,0 +1,141 @@
+.startYourJourney,
+.withUs {
+  margin: 0;
+}
+.heading {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button1 {
+  position: relative;
+  font-size: var(--text-regular-normal-size);
+  line-height: 150%;
+  font-family: var(--text-small-link);
+  color: var(--black);
+  text-align: left;
+  display: inline-block;
+  min-width: 50px;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color: var(--color-thistle-100);
+  width: 98px;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.button2:hover,
+.button:hover {
+  background-color: var(--color-thistle-200);
+  border: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+}
+.button3 {
+  position: relative;
+  font-size: var(--text-regular-normal-size);
+  line-height: 150%;
+  font-family: var(--text-small-link);
+  color: var(--color-white);
+  text-align: left;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.button2:hover {
+  background-color: var(--color-gainsboro-200);
+}
+.actions,
+.column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.actions {
+  flex-direction: row;
+  padding: var(--padding-base) 0 0;
+  gap: var(--gap-base);
+}
+.column {
+  position: absolute;
+  top: 112px;
+  left: 64px;
+  width: 768px;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.cta {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative; /* Ensure the .ctaChild positioning is relative to the .cta element */
+}
+
+.ctaChild {
+  position: absolute;
+  /* Adjust the positioning and dimensions to fit the SVG within the .cta section */
+  height: 540px; /* Increase the height to make the SVG a little bigger */
+  width: auto; /* Set width to auto to maintain the aspect ratio of the SVG */
+  top: 0; /* Align the top of the SVG with the top of the .cta section */
+  right: 5%; /* Move the SVG a bit to the right */
+  bottom: 0; /* Align the bottom of the SVG with the bottom of the .cta section */
+  /* Ensure the SVG does not exceed the width of the .cta section */
+}
+
+
+.cta {
+  align-self: stretch;
+  height: 497px;
+  position: relative;
+  background-color: var(--color-dodgerblue-200);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--heading-h1-size);
+  color: var(--color-white);
+  font-family: var(--text-small-link);
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-26xl);
+    line-height: 54px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-15xl);
+    line-height: 40px;
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+  .cta {
+    height: auto;
+    min-height: 497;
+  }
+}
