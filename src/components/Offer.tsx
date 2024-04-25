@@ -4,7 +4,7 @@ import styles from "./Offer.module.css";
 
 const Offer: FunctionComponent = () => {
   return (
-    <section className={styles.offer}>
+    <section id="offer" className={styles.offer}>
       <div className={styles.frameParent}>
         <img className={styles.frameChild} alt="" src="/group-140-1@2x.png" />
         <div className={styles.sectionTitle}>

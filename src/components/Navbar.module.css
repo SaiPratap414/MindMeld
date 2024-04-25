@@ -33,6 +33,12 @@
 .linkThree1 {
   min-width: 67px;
 }
+.linkTwo,
+.linkThree,
+.linkThree1 {
+  cursor: pointer;
+}
+
 .column1 {
   margin: 0;
   flex: 1;

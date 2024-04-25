@@ -4,7 +4,7 @@ import styles from "./Team.module.css";
 
 const Team: FunctionComponent = () => {
   return (
-    <section className={styles.team}>
+    <section id="team" className={styles.team}>
       <div className={styles.valueComparator}>
         <div className={styles.sectionTitle}>
           <div className={styles.content}>

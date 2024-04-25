@@ -29,8 +29,22 @@ const Navbar: FunctionComponent = () => {
             >
               Services
             </Link>
-            <div className={styles.linkThree}>Experts</div>
-            <div className={styles.linkThree1}>Offerings</div>
+            <Link
+              className={styles.linkThree}
+              to="team"
+              smooth={true}
+              duration={500}
+            >
+              Experts
+            </Link>
+            <Link
+              className={styles.linkThree1}
+              to="offer"
+              smooth={true}
+              duration={500}
+            >
+              Offerings
+            </Link>
           </nav>
           <div className={styles.actions}>
             <div className={styles.button}>
