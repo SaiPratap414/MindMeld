@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import Homepage from "../components/Homepage";
 import Services from "../components/Services";
 import Conditions from "../components/Conditions";
-import Offer from "../components/Offer";
+import Weoffer from "../components/Weoffer";
 import Team from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
@@ -15,7 +15,7 @@ const Dev: FunctionComponent = () => {
       <Homepage />
       <Services />
       <Conditions />
-      <Offer />
+      <Weoffer />
       <Team />
       <Testimonial />
       <CTA />

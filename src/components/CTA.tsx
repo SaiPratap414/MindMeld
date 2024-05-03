@@ -6,10 +6,7 @@ const CTA: FunctionComponent = () => {
     <section className={styles.cta}>
       <div className={styles.column}>
         <div className={styles.content}>
-          <h1 className={styles.heading}>
-            <p className={styles.startYourJourney}>{`Start your journey `}</p>
-            <p className={styles.withUs}>with us</p>
-          </h1>
+          <h1 className={styles.heading}>Start your journey with us</h1>
         </div>
         <div className={styles.actions}>
           <button className={styles.button}>
@@ -20,7 +17,6 @@ const CTA: FunctionComponent = () => {
           </button>
         </div>
       </div>
-      <img className={styles.ctaChild} alt="" src="/group-140-3.svg" />
     </section>
   );
 };

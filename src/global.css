@@ -1,29 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rosario:wght@400;500;600;700&display=swap");
 body {
   margin: 0;
   line-height: normal;
 }
 :root {
   /* fonts */
-  --text-small-link: Roboto;
+  --font-rosario: Rosario;
 
   /* font sizes */
-  --text-small-link-size: 14px;
-  --text-medium-normal-size: 18px;
-  --text-regular-normal-size: 16px;
-  --heading-h1-size: 56px;
-  --font-size-26xl: 45px;
-  --font-size-15xl: 34px;
-  --text-large-semi-bold-size: 20px;
-  --heading-h2-size: 48px;
-  --font-size-19xl: 38px;
-  --font-size-10xl: 29px;
+  --font-size-lg: 18px;
+  --font-size-base: 16px;
+  --font-size-61xl: 80px;
   --font-size-5xl: 24px;
+  --font-size-21xl: 40px;
+  --font-size-xl: 20px;
+  --font-size-29xl: 48px;
+  --font-size-10xl: 29px;
+  --font-size-19xl: 38px;
   --font-size-lgi: 19px;
   --font-size-13xl: 32px;
   --font-size-7xl: 26px;
-  --font-size-61xl: 80px;
-  --font-size-21xl: 40px;
+  --font-size-41xl: 60px;
+  --font-size-17xl: 36px;
 
   /* Colors */
   --color-whitesmoke: #f1f1f1;
@@ -32,74 +30,83 @@ body {
   --color-dodgerblue-200: #3b76da;
   --color-dodgerblue-300: rgba(59, 118, 218, 0.5);
   --color-dodgerblue-400: rgba(84, 143, 245, 0.09);
-  --color-white: #fff;
-  --color-gainsboro-100: #e6e6e6;
-  --color-gainsboro-200: rgba(230, 230, 230, 0.09);
+  --color-darkslategray-100: #333;
+  --color-darkslategray-200: rgba(51, 51, 51, 0.09);
   --color-thistle-100: #dad1fb;
   --color-thistle-200: #c2b8e0;
   --color-gray-100: #8d8d8d;
   --color-gray-200: #888;
+  --color-gray-300: #888585;
+  --color-gray-400: #111;
+  --color-dimgray: #555;
+  --color-lightgray: #d4d4d4;
   --color-lavender-100: #ece8fb;
   --color-lavender-200: #d4cfe3;
-  --color-lightgray: #d4d4d4;
-  --color-dimgray: #555;
+  --color-white: #fff;
 
   /* Gaps */
   --gap-61xl: 80px;
-  --gap-21xl: 40px;
   --gap-xl: 20px;
-  --gap-13xl: 32px;
+  --gap-21xl: 40px;
   --gap-base: 16px;
+  --gap-13xl: 32px;
+  --gap-xs-9: 11.9px;
   --gap-5xl: 24px;
-  --gap-xs: 12px;
   --gap-29xl: 48px;
   --gap-4xs: 9px;
   --gap-mini: 15px;
   --gap-5xs: 8px;
-  --gap-28xl-6: 47.6px;
-  --gap-236xl-8: 255.8px;
-  --gap-109xl: 128px;
-  --gap-45xl: 64px;
-  --gap-38xl-4: 57.4px;
-  --gap-10xl: 29px;
-  --gap-14xl-8: 33.8px;
-  --gap-7xl-2: 26.2px;
-  --gap-xs-8: 11.8px;
-  --gap-28xl-4: 47.4px;
+  --gap-3xs: 10px;
+  --gap-111xl-4: 130.4px;
+  --gap-14xl: 33px;
+  --gap-46xl: 65px;
+  --gap-lgi: 19px;
+  --gap-xs: 12px;
 
   /* Paddings */
   --padding-61xl: 80px;
   --padding-45xl: 64px;
-  --padding-6xl: 25px;
-  --padding-13xl: 32px;
+  --padding-55xl: 74px;
   --padding-33xl: 52px;
+  --padding-29xl: 48px;
+  --padding-13xl: 32px;
   --padding-xl: 20px;
-  --padding-7xs: 6px;
+  --padding-5xs: 8px;
+  --padding-93xl: 112px;
+  --padding-86xl: 105px;
+  --padding-54xl: 73px;
+  --padding-49xl: 68px;
   --padding-base: 16px;
   --padding-3xs: 10px;
   --padding-4xl: 23px;
-  --padding-93xl: 112px;
-  --padding-54xl: 73px;
-  --padding-28xl: 47px;
   --padding-xs: 12px;
   --padding-2xs: 11px;
-  --padding-63xl: 82px;
+  --padding-28xl: 47px;
+  --padding-954xl: 973px;
+  --padding-467xl: 486px;
+  --padding-224xl: 243px;
   --padding-37xl: 56px;
   --padding-9xl: 28px;
-  --padding-3xs-8: 9.8px;
+  --padding-lg: 18px;
+  --padding-23xl: 42px;
+  --padding-8xl: 27px;
   --padding-mini: 15px;
-  --padding-296xl-8: 315.8px;
-  --padding-114xl: 133px;
-  --padding-186xl: 205px;
-  --padding-9xl-8: 28.8px;
-  --padding-5xs-5: 7.5px;
-  --padding-6xs: 7px;
-  --padding-mid: 17px;
-  --padding-mid-4: 17.4px;
+  --padding-12xs-7: 0.7px;
+  --padding-7xl: 26px;
+  --padding-2xl: 21px;
+  --padding-314xl-5: 333.5px;
+  --padding-122xl: 141px;
+  --padding-198xl: 217px;
+  --padding-316xl-9: 335.9px;
+  --padding-4xs-5: 8.5px;
+  --padding-123xl: 142px;
+  --padding-199xl: 218px;
   --padding-sm: 14px;
+  --padding-7xs: 6px;
   --padding-lgi: 19px;
 
   /* Border radiuses */
   --br-5xs: 8px;
   --br-31xl: 50px;
+  --br-5xl: 24px;
 }
