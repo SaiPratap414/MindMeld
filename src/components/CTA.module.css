@@ -54,6 +54,7 @@
   text-align: left;
   display: inline-block;
   min-width: 127px;
+  text-decoration: none;
 }
 .button2 {
   cursor: pointer;
