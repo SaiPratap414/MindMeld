@@ -458,50 +458,43 @@
 }
 @media screen and (max-width: 1200px) {
   .sectionTitle {
-    flex: 1;
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
   }
   .content {
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
   }
   .services1 {
     height: auto;
-    min-height: 1428;
+    min-height: 1428px; /* You might want to adjust this value */
   }
 }
+
 @media screen and (max-width: 1050px) {
   .heading {
     font-size: var(--font-size-19xl);
     line-height: 46px;
   }
   .heading1,
-  .heading2 {
-    font-size: var(--font-size-7xl);
-    line-height: 33px;
-  }
-  .list {
-    flex-wrap: wrap;
-  }
+  .heading2,
   .heading3,
-  .heading4 {
-    font-size: var(--font-size-7xl);
-    line-height: 33px;
-  }
-  .list1 {
-    flex-wrap: wrap;
-  }
+  .heading4,
   .heading5,
-  .heading6 {
-    font-size: var(--font-size-7xl);
-    line-height: 33px;
-  }
-  .list2 {
-    flex-wrap: wrap;
-  }
+  .heading6,
   .heading7 {
     font-size: var(--font-size-7xl);
     line-height: 33px;
   }
+  .list,
+  .list1,
+  .list2 {
+    flex-wrap: wrap;
+  }
 }
+
 @media screen and (max-width: 750px) {
   .actions {
     flex-wrap: wrap;
@@ -509,8 +502,10 @@
   .content2,
   .sectionTitle {
     min-width: 100%;
+    max-width: 100%;
   }
 }
+
 @media screen and (max-width: 450px) {
   .heading {
     font-size: var(--font-size-10xl);
