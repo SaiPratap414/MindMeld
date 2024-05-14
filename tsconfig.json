@@ -1,25 +1,56 @@
 {
   "compilerOptions": {
+    // Target version of ECMAScript to compile down to
     "target": "es5",
+    
+    // List of library files to include in the compilation
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    
+    // Allow JavaScript files to be included in the project
     "allowJs": true,
+    
+    // Skip type checking of declaration files (*.d.ts)
     "skipLibCheck": true,
+    
+    // Allow default imports from modules with no default export
     "esModuleInterop": true,
+    
+    // Allow importing modules that don't have a default export
     "allowSyntheticDefaultImports": true,
+    
+    // Enable strict type-checking options
     "strict": true,
+    
+    // Ensure consistent casing in file names
     "forceConsistentCasingInFileNames": true,
+    
+    // Ensure switch statements cover all possible cases
     "noFallthroughCasesInSwitch": true,
+    
+    // Specify module code generation
     "module": "esnext",
+    
+    // Specify module resolution strategy
     "moduleResolution": "node",
+    
+    // Allow importing JSON modules
     "resolveJsonModule": true,
+    
+    // Report errors when resolving TypeScript files in isolatedModules mode
     "isolatedModules": true,
+    
+    // Disable emitting output files from TypeScript compilation
     "noEmit": true,
+    
+    // Specify JSX file extension
     "jsx": "react-jsx"
   },
+  
+  // Specify which files to include in the compilation process
   "include": [
     "src"
   ]
