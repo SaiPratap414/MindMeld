@@ -11,7 +11,7 @@ import styles from "./DEV.module.css";
 
 const DEV: FunctionComponent = () => {
   return (
-    <div className={styles.dev}>
+    <div className={styles.mind}>
       <Homepage />
       <Services />
       <Conditions />
