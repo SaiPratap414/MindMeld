@@ -2,26 +2,26 @@ import { FunctionComponent } from "react";
 import Homepage from "../components/Homepage";
 import Services from "../components/Services";
 import Conditions from "../components/Conditions";
-import Weoffer from "../components/Weoffer";
+import Features from "../components/Features";
 import Team from "../components/Team";
-import Testimonial from "../components/Testimonial";
+import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
-import styles from "./Dev.module.css";
+import styles from "./DEV.module.css";
 
-const Dev: FunctionComponent = () => {
+const DEV: FunctionComponent = () => {
   return (
     <div className={styles.dev}>
       <Homepage />
       <Services />
       <Conditions />
-      <Weoffer />
+      <Features />
       <Team />
-      <Testimonial />
+      <Testimonials />
       <CTA />
       <Footer />
     </div>
   );
 };
 
-export default Dev;
+export default DEV;

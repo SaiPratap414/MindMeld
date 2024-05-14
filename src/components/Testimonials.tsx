@@ -1,12 +1,14 @@
 import { FunctionComponent } from "react";
-import styles from "./Testimonial.module.css";
+import styles from "./Testimonials.module.css";
 
-const Testimonial: FunctionComponent = () => {
+const Testimonials: FunctionComponent = () => {
   return (
-    <section className={styles.testimonial}>
-      <div className={styles.sectionTitleWrapper}>
-        <div className={styles.sectionTitle}>
-          <h1 className={styles.heading}>Customer Testimonials</h1>
+    <section className={styles.testimonials}>
+      <div className={styles.testimonialHeaderWrapper}>
+        <div className={styles.testimonialHeader}>
+          <div className={styles.sectionTitle}>
+            <h1 className={styles.heading}>Customer Reviews</h1>
+          </div>
         </div>
       </div>
       <div className={styles.container}>
@@ -22,8 +24,8 @@ const Testimonial: FunctionComponent = () => {
               </div>
               <div className={styles.avatar}>
                 <div className={styles.avatarContent}>
-                  <div className={styles.modalWindow}>Name Surname</div>
-                  <div className={styles.toolTip}>Position, Company name</div>
+                  <div className={styles.name}>Name Surname</div>
+                  <div className={styles.title}>Position, Company name</div>
                 </div>
               </div>
             </div>
@@ -56,7 +58,7 @@ const Testimonial: FunctionComponent = () => {
             <img className={styles.icon1} alt="" src="/icon-1.svg" />
           </button>
         </div>
-        <div className={styles.popoverMenu}>
+        <div className={styles.dotsContainer}>
           <div className={styles.sliderDots}>
             <div className={styles.dot} />
             <div className={styles.dot1} />
@@ -70,4 +72,4 @@ const Testimonial: FunctionComponent = () => {
   );
 };
 
-export default Testimonial;
+export default Testimonials;

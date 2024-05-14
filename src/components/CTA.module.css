@@ -78,7 +78,7 @@
 }
 .actions {
   flex-direction: row;
-  padding: var(--padding-base) 0 0;
+  padding: var(--padding-base) var(--padding-462xl) 0 0;
   gap: var(--gap-base);
 }
 .column,
@@ -92,7 +92,7 @@
 }
 .cta {
   align-self: stretch;
-  background: linear-gradient(225.75deg, #ece8fb 42%, #b2d5ee 66%, #cec3f6),
+  background: linear-gradient(225.75deg, #ece8fb 42%, #ffae95 66%, #cec3f6),
     #3b76da;
   overflow: hidden;
   flex-direction: row;
@@ -108,11 +108,18 @@
     font-size: var(--font-size-21xl);
     line-height: 58px;
   }
+  .actions,
+  .cta {
+    box-sizing: border-box;
+  }
+  .actions {
+    flex-wrap: wrap;
+    padding-right: var(--padding-221xl);
+  }
   .cta {
     gap: var(--gap-21xl);
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
-    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 750px) {
@@ -126,6 +133,10 @@
   .heading {
     font-size: var(--font-size-5xl);
     line-height: 38px;
+  }
+  .actions {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
   }
   .cta {
     gap: var(--gap-xl);

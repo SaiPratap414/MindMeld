@@ -1,0 +1,207 @@
+.asset41 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.asset41Wrapper {
+  height: 809.9px;
+  width: 326.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-316xl-9) var(--padding-4xs-5) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.asset22 {
+  align-self: stretch;
+  height: 152px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.embraceYourJourney,
+.empowerYourMind {
+  margin: 0;
+}
+.mediumLengthHeroContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(180deg, #82aaef, #3b6bbc 47.5%, #3b76da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button1,
+.loremIpsumDolor {
+  position: relative;
+  line-height: 150%;
+  text-align: left;
+  display: inline-block;
+}
+.loremIpsumDolor {
+  font-size: var(--font-size-lg);
+  max-width: 100%;
+}
+.button1 {
+  font-size: var(--font-size-base);
+  font-family: var(--font-rosario);
+  color: var(--color-dodgerblue-200);
+  min-width: 48px;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--color-dodgerblue-200);
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color: var(--color-thistle-100);
+  width: 96px;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.button2:hover,
+.button:hover {
+  background-color: var(--color-thistle-200);
+  border: 1px solid var(--color-dodgerblue-100);
+  box-sizing: border-box;
+}
+.button3 {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 150%;
+  font-family: var(--font-rosario);
+  color: var(--color-dodgerblue-200);
+  text-align: left;
+  display: inline-block;
+  min-width: 53px;
+}
+.actions,
+.button2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--color-dodgerblue-200);
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  align-items: center;
+  white-space: nowrap;
+}
+.button2:hover {
+  background-color: var(--color-dodgerblue-400);
+}
+.actions {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: var(--padding-base) var(--padding-xl) 0;
+  gap: var(--gap-base);
+}
+.asset22Parent,
+.contentInner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.asset22Parent {
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.contentInner {
+  flex-direction: row;
+  min-width: 484px;
+}
+.layer2Icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.body,
+.content,
+.contentLayer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.contentLayer {
+  height: 820.9px;
+  width: 321.9px;
+  flex-direction: column;
+  padding: var(--padding-314xl-5) 0 0;
+  box-sizing: border-box;
+}
+.body,
+.content {
+  flex-direction: row;
+}
+.content {
+  flex: 1;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.body {
+  align-self: stretch;
+  padding: 0 var(--padding-7xl) 0 var(--padding-2xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-61xl);
+  color: var(--color-dodgerblue-200);
+  font-family: var(--font-rosario);
+}
+@media screen and (max-width: 1050px) {
+  .asset41Wrapper {
+    padding-top: var(--padding-199xl);
+    box-sizing: border-box;
+  }
+  .mediumLengthHeroContainer {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+  .contentLayer {
+    padding-top: var(--padding-198xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contentInner {
+    gap: var(--gap-lgi);
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .asset41Wrapper {
+    padding-top: var(--padding-123xl);
+    box-sizing: border-box;
+  }
+  .mediumLengthHeroContainer {
+    font-size: var(--font-size-5xl);
+    line-height: 32px;
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+  .contentLayer {
+    padding-top: var(--padding-122xl);
+    box-sizing: border-box;
+  }
+}

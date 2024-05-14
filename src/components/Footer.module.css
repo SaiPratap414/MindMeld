@@ -13,7 +13,7 @@
   height: 24px;
   max-width: 100%;
 }
-.composite {
+.iconContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -21,23 +21,21 @@
   justify-content: flex-start;
   padding: var(--padding-5xs) 0 0;
 }
-.asset21Parent,
-.rasterImage {
+.logoContainer,
+.logoContainerWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.asset21Parent {
+.logoContainer {
   width: 202.2px;
   justify-content: flex-start;
   gap: var(--gap-xs-9);
 }
-.rasterImage {
-  width: 395px;
+.logoContainerWrapper {
+  align-self: stretch;
   justify-content: center;
   padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
 }
 .experts,
 .offerings,
@@ -55,8 +53,8 @@
 .offerings {
   min-width: 62px;
 }
-.container,
-.links {
+.links,
+.linksWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -66,18 +64,16 @@
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.container {
-  width: 395px;
+.linksWrapper {
+  align-self: stretch;
   justify-content: center;
   padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
 }
 .span,
 .span1 {
   color: var(--black);
 }
-.fillParent {
+.text {
   position: relative;
   line-height: 150%;
 }
@@ -85,31 +81,38 @@
 .span2 {
   color: var(--black);
 }
-.fillParent1 {
+.text1 {
   position: relative;
   line-height: 150%;
 }
-.content,
-.fitContent {
-  display: flex;
+.copyright {
+  flex-direction: row;
   justify-content: flex-start;
   gap: var(--gap-13xl);
-}
-.fitContent {
-  flex-direction: row;
-  align-items: flex-start;
-  max-width: 100%;
   font-size: var(--font-size-lg);
   color: var(--color-dodgerblue-200);
 }
-.content {
-  flex-direction: column;
-  align-items: center;
-}
 .content,
+.copyright,
+.footerContent {
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  width: 395px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.footerContent {
+  flex-direction: row;
+  justify-content: center;
+}
 .credits,
 .divider,
-.footer {
+.footer,
+.footerContent {
   align-self: stretch;
   max-width: 100%;
 }
@@ -152,11 +155,11 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .fitContent {
+  .copyright {
     flex-wrap: wrap;
   }
   .content,
-  .fitContent {
+  .copyright {
     gap: var(--gap-base);
   }
   .footer {

@@ -1,0 +1,64 @@
+.placeholderImageIcon {
+  align-self: stretch;
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 100%;
+  transform: scale(1.041);
+}
+.wrapperPlaceholderImage {
+  align-self: stretch;
+  height: 395px;
+  position: relative;
+  border-radius: var(--br-5xl);
+  max-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-gray-200);
+}
+.bio,
+.jobTitle,
+.name {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.card,
+.content,
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content,
+.title {
+  align-self: stretch;
+  align-items: center;
+}
+.card {
+  width: 400px;
+  flex-shrink: 0;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--black);
+  font-family: var(--font-rosario);
+}
+@media screen and (max-width: 450px) {
+  .name {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+  }
+}

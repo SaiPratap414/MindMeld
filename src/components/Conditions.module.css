@@ -85,7 +85,7 @@
   font-family: inherit;
   z-index: 1;
 }
-.wrapperPlaceholderImageParent {
+.images {
   height: 320px;
   flex: 1;
   display: flex;
@@ -134,7 +134,7 @@
   min-width: 124px;
   z-index: 1;
 }
-.wrapperPlaceholderImageGroup {
+.images1 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -181,7 +181,7 @@
   font-family: inherit;
   z-index: 1;
 }
-.wrapperPlaceholderImageContainer {
+.images2 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -230,7 +230,7 @@
   display: inline-block;
   z-index: 1;
 }
-.frameDiv {
+.images3 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -283,7 +283,7 @@
   display: inline-block;
   z-index: 1;
 }
-.wrapperPlaceholderImageParent1 {
+.images4 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -334,7 +334,7 @@
   font-family: inherit;
   z-index: 1;
 }
-.wrapperPlaceholderImageParent2 {
+.images5 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -381,7 +381,7 @@
   font-family: inherit;
   z-index: 1;
 }
-.wrapperPlaceholderImageParent3 {
+.images6 {
   height: 320px;
   flex: 1;
   display: flex;
@@ -434,12 +434,12 @@
 }
 .conditions,
 .content1,
-.wrapperPlaceholderImageParent4 {
+.images7 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.wrapperPlaceholderImageParent4 {
+.images7 {
   height: 320px;
   flex: 1;
   flex-direction: column;
@@ -464,7 +464,7 @@
   flex-shrink: 0;
   text-align: center;
   font-size: var(--font-size-41xl);
-  color: var(--color-gray-300);
+  color: var(--color-tomato);
 }
 .conditions {
   align-self: stretch;
@@ -544,56 +544,56 @@
     font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .wrapperPlaceholderImageParent {
+  .images {
     min-width: 100%;
   }
   .ocd {
     font-size: var(--font-size-17xl);
     line-height: 54px;
   }
-  .wrapperPlaceholderImageGroup {
+  .images1 {
     min-width: 100%;
   }
   .anxiety {
     font-size: var(--font-size-17xl);
     line-height: 54px;
   }
-  .wrapperPlaceholderImageContainer {
+  .images2 {
     min-width: 100%;
   }
   .ptsd {
     font-size: var(--font-size-17xl);
     line-height: 54px;
   }
-  .frameDiv {
+  .images3 {
     min-width: 100%;
   }
   .socialAnxiety {
     font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .wrapperPlaceholderImageParent1 {
+  .images4 {
     min-width: 100%;
   }
   .womensHealth {
     font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .wrapperPlaceholderImageParent2 {
+  .images5 {
     min-width: 100%;
   }
   .depression {
     font-size: var(--font-size-17xl);
     line-height: 54px;
   }
-  .wrapperPlaceholderImageParent3 {
+  .images6 {
     min-width: 100%;
   }
   .adultAdhd {
     font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .wrapperPlaceholderImageParent4 {
+  .images7 {
     min-width: 100%;
   }
   .conditions {

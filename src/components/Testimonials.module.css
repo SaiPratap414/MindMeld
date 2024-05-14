@@ -9,18 +9,23 @@
   display: inline-block;
   max-width: 100%;
 }
+.sectionTitle {
+  flex: 1;
+  justify-content: flex-start;
+}
 .sectionTitle,
-.sectionTitleWrapper {
+.testimonialHeader,
+.testimonialHeaderWrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   max-width: 100%;
 }
-.sectionTitle {
+.testimonialHeader {
   width: 560px;
   justify-content: flex-start;
 }
-.sectionTitleWrapper {
+.testimonialHeaderWrapper {
   align-self: stretch;
   justify-content: center;
 }
@@ -50,11 +55,11 @@
   position: relative;
   line-height: 140%;
 }
-.modalWindow {
+.name {
   font-weight: 600;
 }
-.modalWindow,
-.toolTip {
+.name,
+.title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
@@ -238,26 +243,26 @@
   gap: var(--gap-4xs);
 }
 .container,
-.popoverMenu,
-.testimonial {
+.dotsContainer,
+.testimonials {
   align-self: stretch;
   display: flex;
   align-items: flex-start;
 }
-.popoverMenu {
+.dotsContainer {
   flex-direction: row;
   justify-content: center;
   padding: 0 var(--padding-xl);
 }
 .container,
-.testimonial {
+.testimonials {
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-29xl);
   max-width: 100%;
   font-size: var(--font-size-xl);
 }
-.testimonial {
+.testimonials {
   background-color: var(--color-whitesmoke);
   overflow: hidden;
   padding: var(--padding-93xl) var(--padding-45xl);
@@ -285,7 +290,7 @@
   .container {
     gap: var(--gap-5xl);
   }
-  .testimonial {
+  .testimonials {
     gap: var(--gap-21xl);
     padding: var(--padding-54xl) var(--padding-13xl);
     box-sizing: border-box;
@@ -317,7 +322,7 @@
   .column2 {
     gap: var(--gap-base);
   }
-  .testimonial {
+  .testimonials {
     gap: var(--gap-xl);
   }
 }

@@ -1,16 +1,17 @@
 import { FunctionComponent } from "react";
-import styles from "./Weoffer.module.css";
+import Column from "./Column";
+import styles from "./Features.module.css";
 
-const Weoffer: FunctionComponent = () => {
+const Features: FunctionComponent = () => {
   return (
-    <section className={styles.weoffer}>
-      <div className={styles.shapeQuartet}>
+    <section className={styles.features} id="features">
+      <div className={styles.featureTitle}>
         <div className={styles.sectionTitle}>
-          <h1 className={styles.heading}>We Offer</h1>
+          <h1 className={styles.heading}>What Makes us Unique</h1>
         </div>
       </div>
-      <div className={styles.imageOctetParent}>
-        <div className={styles.imageOctet}>
+      <div className={styles.featureLists}>
+        <div className={styles.listItemParent}>
           <div className={styles.listItem}>
             <img
               className={styles.mdicertificateIcon}
@@ -56,14 +57,14 @@ const Weoffer: FunctionComponent = () => {
                 className={styles.monitoringSupport}
               >{`Monitoring & Support`}</p>
             </h1>
-            <div className={styles.pathQuaragintasixteen}>
+            <div className={styles.text2}>
               Our mental health therapist monitor your progress and support you
               even between sessions through regular check-ins, self-care tools,
               and more.
             </div>
           </div>
         </div>
-        <div className={styles.imageOctet1}>
+        <div className={styles.listItemGroup}>
           <div className={styles.listItem3}>
             <img
               className={styles.materialSymbolsfactCheckIcon}
@@ -75,7 +76,7 @@ const Weoffer: FunctionComponent = () => {
               <p className={styles.proprietary}>Proprietary</p>
               <p className={styles.clinicalProtocols}>Clinical Protocols</p>
             </h1>
-            <div className={styles.text2}>
+            <div className={styles.text3}>
               Our mental health therapist monitor your progress and support you
               even between sessions through regular check-ins, self-care tools,
               and more.
@@ -92,7 +93,7 @@ const Weoffer: FunctionComponent = () => {
               <p className={styles.integrationWith}>{`Integration with `}</p>
               <p className={styles.psychiatry}>Psychiatry</p>
             </h1>
-            <div className={styles.text3}>
+            <div className={styles.text4}>
               Our mental health therapists work closely with our psychiatrists
               when needed, to build an integrated care management plan to
               deliver the best outcomes for each client.
@@ -108,7 +109,7 @@ const Weoffer: FunctionComponent = () => {
               <p className={styles.personalAnd}>Personal and</p>
               <p className={styles.peerSupervision}>Peer Supervision</p>
             </h1>
-            <div className={styles.text4}>
+            <div className={styles.text5}>
               We’ve developed clinical supervision guidelines and auditing
               processes to ensure our team of therapists is able to help each
               client move towards their goals.
@@ -120,56 +121,22 @@ const Weoffer: FunctionComponent = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.content1}>
-            <div className={styles.column}>
-              <div className={styles.avatar}>
-                <img
-                  className={styles.materialSymbolscontactPhoneIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/materialsymbolscontactphone.svg"
-                />
-                <div className={styles.avatarContent}>
-                  <h3 className={styles.pathSeptilliard}>Phone Call</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.column1}>
-              <div className={styles.avatar1}>
-                <img
-                  className={styles.materialSymbolsmarkChatReaIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/materialsymbolsmarkchatread.svg"
-                />
-                <div className={styles.avatarContent1}>
-                  <h3 className={styles.text5}>Outside Counselling</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.column2}>
-              <div className={styles.avatar2}>
-                <img
-                  className={styles.materialSymbolsvideoChatIcon}
-                  alt=""
-                  src="/materialsymbolsvideochat.svg"
-                />
-                <div className={styles.avatarContent2}>
-                  <h3 className={styles.text6}>Video Call</h3>
-                </div>
-              </div>
-            </div>
-            <div className={styles.column3}>
-              <div className={styles.avatar3}>
-                <img
-                  className={styles.materialSymbolsassignmentTuIcon}
-                  alt=""
-                  src="/materialsymbolsassignmentturnedin.svg"
-                />
-                <div className={styles.avatarContent3}>
-                  <h3 className={styles.text7}>Assessment</h3>
-                </div>
-              </div>
-            </div>
+            <Column
+              materialSymbolscontactPho="/materialsymbolscontactphone.svg"
+              text="Phone Call"
+            />
+            <Column
+              materialSymbolscontactPho="/materialsymbolsmarkchatread.svg"
+              text="Outside Counselling"
+            />
+            <Column
+              materialSymbolscontactPho="/materialsymbolsvideochat.svg"
+              text="Video Call"
+            />
+            <Column
+              materialSymbolscontactPho="/materialsymbolsassignmentturnedin.svg"
+              text="Assessment"
+            />
           </div>
         </div>
       </div>
@@ -177,4 +144,4 @@ const Weoffer: FunctionComponent = () => {
   );
 };
 
-export default Weoffer;
+export default Features;
