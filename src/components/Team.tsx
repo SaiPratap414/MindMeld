@@ -20,7 +20,7 @@ const Team: FunctionComponent = () => {
         <div className={styles.row}>
           <div className={styles.content2}>
             <Card name1="Ektaa Chaudhary" jobTitle="Founder" />
-            <Card name1="Simran" jobTitle="Psychologist" image="/team1.jpg" /> {/* Pass a different image for the second Card */}
+            <Card name1="Simran" jobTitle="Co-Founder" image="/team1.jpg" /> {/* Pass a different image for the second Card */}
           </div>
         </div>
       </div>
