@@ -15,9 +15,16 @@ const CTA: FunctionComponent = () => {
   </a>
 </button>
 
-          <button className={styles.button2}>
-            <div className={styles.button3}>Book Appointment</div>
-          </button>
+<button className={styles.button2}>
+  <a
+    href="https://wa.me/917303113594?text=I%20would%20like%20to%20book%20an%20appointment"
+    className={styles.button3}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Book Appointment
+  </a>
+</button>
         </div>
       </div>
     </section>
