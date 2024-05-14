@@ -65,6 +65,7 @@
   text-align: left;
   display: inline-block;
   min-width: 127px;
+  text-decoration: none;
 }
 .actions,
 .button2 {
