@@ -50,6 +50,7 @@
   padding: 0;
   box-sizing: border-box;
   gap: var(--gap-29xl);
+  justify-content: flex-start;
 }
 .dot,
 .dot1,
@@ -179,6 +180,14 @@
   color: var(--color-dodgerblue-200);
   font-family: var(--font-rosario);
 }
+.sectionTitleParent {
+  margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+}
+
+.content1 {
+  margin-top: -40px; /* Adjust the margin-top as needed */
+}
+
 /* Add these styles to your CSS file */
 
 /* Styles for the card */

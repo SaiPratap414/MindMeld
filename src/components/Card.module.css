@@ -56,6 +56,11 @@
   color: var(--black);
   font-family: var(--font-rosario);
 }
+.name,
+.jobTitle {
+  margin-left: 55px; /* Adjust the margin as needed */
+}
+
 @media screen and (max-width: 450px) {
   .name {
     font-size: var(--font-size-base);

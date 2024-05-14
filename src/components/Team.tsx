@@ -19,29 +19,9 @@ const Team: FunctionComponent = () => {
       <div className={styles.content1}>
         <div className={styles.row}>
           <div className={styles.content2}>
-            <Card name1="Ektaa Chaudhary" jobTitle="Psychologist" />
-            <Card name1="Simran" jobTitle="Psychologist" />
+            <Card name1="Ektaa Chaudhary" jobTitle="Founder" />
+            <Card name1="Simran" jobTitle="Psychologist" image="/team1.jpg" /> {/* Pass a different image for the second Card */}
           </div>
-          {/* Commenting out the dots and arrows section for now */}
-          {/* <div className={styles.content3}>
-            <div className={styles.dotsContainer}>
-              <div className={styles.sliderDots}>
-                <div className={styles.dot} />
-                <div className={styles.dot1} />
-                <div className={styles.dot2} />
-                <div className={styles.dot3} />
-                <div className={styles.dot4} />
-              </div>
-            </div>
-            <div className={styles.sliderButtons}>
-              <button className={styles.button}>
-                <img className={styles.icon} alt="" src="/icon.svg" />
-              </button>
-              <button className={styles.button1}>
-                <img className={styles.icon1} alt="" src="/icon-1.svg" />
-              </button>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
