@@ -7,9 +7,9 @@ import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
-import styles from "./DEV.module.css";
+import styles from "./Mind.module.css";
 
-const DEV: FunctionComponent = () => {
+const Mind: FunctionComponent = () => {
   return (
     <div className={styles.mind}>
       <Homepage />
@@ -24,4 +24,4 @@ const DEV: FunctionComponent = () => {
   );
 };
 
-export default DEV;
+export default Mind;

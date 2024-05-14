@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import DEV from "./pages/DEV";
+import Mind from "./pages/Mind";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<DEV />} />
+      <Route path="/" element={<Mind />} />
     </Routes>
   );
 }
