@@ -19,12 +19,11 @@ const Team: FunctionComponent = () => {
       <div className={styles.content1}>
         <div className={styles.row}>
           <div className={styles.content2}>
-            <Card name1="Ektaa Chaudhary" jobTitle="Therapist" />
-            <Card name1="Simran" jobTitle="Job title" />
-            <Card name1="Full name" jobTitle="Job title" />
-            <Card name1="Full name" jobTitle="Job title" />
+            <Card name1="Ektaa Chaudhary" jobTitle="Psychologist" />
+            <Card name1="Simran" jobTitle="Psychologist" />
           </div>
-          <div className={styles.content3}>
+          {/* Commenting out the dots and arrows section for now */}
+          {/* <div className={styles.content3}>
             <div className={styles.dotsContainer}>
               <div className={styles.sliderDots}>
                 <div className={styles.dot} />
@@ -42,7 +41,7 @@ const Team: FunctionComponent = () => {
                 <img className={styles.icon1} alt="" src="/icon-1.svg" />
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

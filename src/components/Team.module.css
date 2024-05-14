@@ -179,6 +179,46 @@
   color: var(--color-dodgerblue-200);
   font-family: var(--font-rosario);
 }
+/* Add these styles to your CSS file */
+
+/* Styles for the card */
+.Card {
+  position: relative; /* Ensure the card is positioned relative for absolute positioning of the popup */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+/* Styles for the popup */
+.Popup {
+  position: absolute; /* Position the popup absolutely relative to the card */
+  top: 0; /* Align the popup to the top of the card */
+  left: 0; /* Align the popup to the left of the card */
+  width: 100%; /* Set the width of the popup to match the card */
+  height: 100%; /* Set the height of the popup to match the card */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+  opacity: 0; /* Initially hide the popup */
+  transition: opacity 0.3s ease; /* Add a transition effect for opacity */
+  display: flex; /* Use flexbox for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Styles for the images */
+.Card:hover .Popup {
+  opacity: 1; /* Show the popup when the card is hovered */
+}
+
+/* Additional styles for the images */
+.Card img {
+  max-width: 100%; /* Ensure the images don't exceed the width of the card */
+  height: auto; /* Maintain the aspect ratio of the images */
+  transition: transform 0.3s ease; /* Add a transition effect for smooth scaling */
+}
+
+/* Scale the images up when hovered */
+.Card:hover img {
+  transform: scale(1.1); /* Scale the images to 110% of their original size */
+}
+
 @media screen and (max-width: 1050px) {
   .heading {
     font-size: var(--font-size-19xl);

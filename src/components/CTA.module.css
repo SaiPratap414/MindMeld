@@ -23,6 +23,7 @@
   text-align: left;
   display: inline-block;
   min-width: 48px;
+  text-decoration: none;
 }
 .button {
   cursor: pointer;

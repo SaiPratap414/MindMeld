@@ -46,6 +46,7 @@
   line-height: 150%;
   text-align: left;
   display: inline-block;
+  text-decoration: none;
 }
 .loremIpsumDolor {
   font-size: var(--font-size-lg);
@@ -56,6 +57,7 @@
   font-family: var(--font-rosario);
   color: var(--color-dodgerblue-200);
   min-width: 48px;
+  text-decoration: none;
 }
 .button {
   cursor: pointer;

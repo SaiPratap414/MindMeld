@@ -1,7 +1,28 @@
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import styles from "./Footer.module.css";
 
 const Footer: FunctionComponent = () => {
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTeam = () => {
+    const teamSection = document.getElementById("team");
+    if (teamSection) {
+      teamSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToFeatures = () => {
+    const featuresSection = document.getElementById("features");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className={styles.footer}>
       <div className={styles.footerContent}>
@@ -21,9 +42,15 @@ const Footer: FunctionComponent = () => {
           </div>
           <div className={styles.linksWrapper}>
             <div className={styles.links}>
-              <div className={styles.services}>Services</div>
-              <div className={styles.experts}>Experts</div>
-              <div className={styles.offerings}>Offerings</div>
+              <div className={styles.services} onClick={scrollToServices}>
+                Services
+              </div>
+              <div className={styles.experts} onClick={scrollToTeam}>
+                Experts
+              </div>
+              <div className={styles.offerings} onClick={scrollToFeatures}>
+                Offerings
+              </div>
             </div>
           </div>
           <div className={styles.copyright}>

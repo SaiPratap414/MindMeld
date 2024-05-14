@@ -29,9 +29,12 @@ const Body: FunctionComponent = () => {
               Personalized counselling and support for everyone.
             </div>
             <div className={styles.actions}>
-              <button className={styles.button}>
-                <div className={styles.button1}>Call Us</div>
-              </button>
+            <button className={styles.button}>
+  <a href="tel:+917303113594" className={styles.button1}>
+    Call Us
+  </a>
+</button>
+
               <button className={styles.button2}>
                 <div className={styles.button3}>Sign Up</div>
               </button>

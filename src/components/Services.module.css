@@ -19,6 +19,7 @@
 .description {
   position: relative;
   line-height: 150%;
+  text-decoration: none;
 }
 .description {
   align-self: stretch;
@@ -33,6 +34,7 @@
   text-align: left;
   display: inline-block;
   min-width: 48px;
+  text-decoration: none;
 }
 .button {
   cursor: pointer;
