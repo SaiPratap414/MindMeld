@@ -4,7 +4,6 @@ import Services from "../components/Services";
 import Conditions from "../components/Conditions";
 import Features from "../components/Features";
 import Team from "../components/Team";
-import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import styles from "./Mind.module.css";
@@ -17,7 +16,8 @@ const Mind: FunctionComponent = () => {
       <Conditions />
       <Features />
       <Team />
-      <Testimonials />
+      {/* Testimonials component is commented out for now */}
+      {/* <Testimonials /> */}
       <CTA />
       <Footer />
     </div>
