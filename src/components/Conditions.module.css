@@ -27,44 +27,50 @@
   display: inline-block;
   max-width: 100%;
 }
-.column1,
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
 .column1 {
   flex: 1;
   min-width: 400px;
   font-size: var(--font-size-lg);
   color: var(--color-gray-200);
 }
+.column1,
+.content,
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
 .content {
-  align-self: stretch;
+  flex: 1;
   flex-wrap: wrap;
   gap: var(--gap-61xl);
 }
-.placeholderImageIcon {
+.contentWrapper {
   align-self: stretch;
+  padding: 0 var(--padding-45xl);
+  box-sizing: border-box;
+}
+.placeholderImageIcon {
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 119%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,46 +82,50 @@
 }
 .bipolarDisorder {
   margin: 0 !important;
+  width: 220px;
   position: absolute;
   top: calc(50% - 60px);
-  left: calc(50% - 110px);
+  left: calc(50% - 109.5px);
   font-size: inherit;
   line-height: 100%;
   font-weight: 400;
   font-family: inherit;
+  display: inline-block;
   z-index: 1;
 }
-.images {
+.wrapperPlaceholderImageParent {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 333px;
   max-width: 100%;
 }
 .placeholderImageIcon1 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage1 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 119%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,48 +133,50 @@
 }
 .ocd {
   margin: 0 !important;
+  width: 124px;
   position: absolute;
   top: calc(50% - 45px);
-  left: calc(50% - 62px);
+  left: calc(50% - 61.5px);
   font-size: inherit;
   line-height: 150%;
   font-weight: 400;
   font-family: inherit;
   display: inline-block;
-  min-width: 124px;
   z-index: 1;
 }
-.images1 {
+.wrapperPlaceholderImageGroup {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 333px;
   max-width: 100%;
 }
 .placeholderImageIcon2 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage2 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 119%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,46 +184,50 @@
 }
 .anxiety {
   margin: 0 !important;
+  width: 190px;
   position: absolute;
   top: calc(50% - 45px);
-  left: calc(50% - 95px);
+  left: calc(50% - 94.5px);
   font-size: inherit;
   line-height: 150%;
   font-weight: 400;
   font-family: inherit;
+  display: inline-block;
   z-index: 1;
 }
-.images2 {
+.wrapperPlaceholderImageContainer {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 333px;
   max-width: 100%;
 }
 .placeholderImageIcon3 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage3 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 119%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +238,7 @@
   width: 143px;
   position: absolute;
   top: calc(50% - 45px);
-  left: calc(50% - 71.5px);
+  left: calc(50% - 71px);
   font-size: inherit;
   line-height: 150%;
   font-weight: 400;
@@ -230,37 +246,39 @@
   display: inline-block;
   z-index: 1;
 }
-.images3 {
+.frameDiv {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 333px;
   max-width: 100%;
 }
 .placeholderImageIcon4 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage4 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 120%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,7 +293,7 @@
   width: 190px;
   position: absolute;
   top: calc(50% - 60px);
-  left: calc(50% - 95px);
+  left: calc(50% - 94.5px);
   font-size: inherit;
   line-height: 100%;
   font-weight: 400;
@@ -283,37 +301,39 @@
   display: inline-block;
   z-index: 1;
 }
-.images4 {
+.wrapperPlaceholderImageParent1 {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 332px;
   max-width: 100%;
 }
 .placeholderImageIcon5 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage5 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 120%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,46 +345,50 @@
 }
 .womensHealth {
   margin: 0 !important;
+  width: 228px;
   position: absolute;
   top: calc(50% - 60px);
-  left: calc(50% - 114px);
+  left: calc(50% - 113.5px);
   font-size: inherit;
   line-height: 100%;
   font-weight: 400;
   font-family: inherit;
+  display: inline-block;
   z-index: 1;
 }
-.images5 {
+.wrapperPlaceholderImageParent2 {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 332px;
   max-width: 100%;
 }
 .placeholderImageIcon6 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage6 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 120%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,46 +396,50 @@
 }
 .depression {
   margin: 0 !important;
+  width: 286px;
   position: absolute;
   top: 115px;
-  left: 65px;
+  left: 40px;
   font-size: inherit;
   line-height: 150%;
   font-weight: 400;
   font-family: inherit;
+  display: inline-block;
   z-index: 1;
 }
-.images6 {
+.wrapperPlaceholderImageParent3 {
   height: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
+  min-width: 332px;
   max-width: 100%;
 }
 .placeholderImageIcon7 {
-  align-self: stretch;
+  width: 100%;
   flex: 1;
-  overflow: hidden;
+  flex-shrink: 0;
   object-fit: contain;
   position: absolute;
   left: 0;
   top: 4px;
-  width: 100%;
   height: 100%;
   transform: scale(1.05);
 }
 .wrapperPlaceholderImage7 {
-  align-self: stretch;
+  width: 416px;
   flex: 1;
   position: relative;
   border-radius: var(--br-5xl);
-  max-width: 100%;
   max-height: 100%;
+  max-width: 120%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,57 +451,55 @@
 }
 .adultAdhd {
   margin: 0 !important;
+  width: 165px;
   position: absolute;
   top: calc(50% - 60px);
-  left: calc(50% - 82.5px);
+  left: calc(50% - 43.5px);
   font-size: inherit;
   line-height: 100%;
   font-weight: 400;
   font-family: inherit;
+  display: inline-block;
   z-index: 1;
 }
 .conditions,
 .content1,
-.images7 {
+.wrapperPlaceholderImageParent4 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
 }
-.images7 {
+.wrapperPlaceholderImageParent4 {
   height: 320px;
   flex: 1;
   flex-direction: column;
+  padding: 0;
   position: relative;
   gap: var(--gap-3xs);
-  min-width: 395px;
-  max-width: 100%;
+  min-width: 332px;
 }
 .conditions,
 .content1 {
-  box-sizing: border-box;
+  align-self: stretch;
 }
 .content1 {
-  margin-left: -200px;
-  width: 1712px;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  gap: 16px 15.3px;
+  gap: 16px 14px;
   min-height: 656px;
-  max-width: 131%;
-  flex-shrink: 0;
   text-align: center;
   font-size: var(--font-size-41xl);
   color: var(--color-tomato);
 }
 .conditions {
-  align-self: stretch;
   background-color: var(--color-whitesmoke);
   overflow: hidden;
   flex-direction: column;
-  padding: var(--padding-93xl) var(--padding-45xl);
-  gap: var(--gap-61xl);
-  max-width: 100%;
+  padding: var(--padding-93xl) 0 var(--padding-63xl);
+  gap: var(--gap-91xl);
   text-align: left;
   font-size: var(--font-size-29xl);
   color: var(--color-dodgerblue-200);
@@ -481,7 +507,8 @@
 }
 @media screen and (max-width: 1200px) {
   .conditions {
-    padding: var(--padding-54xl) var(--padding-13xl);
+    padding-top: var(--padding-54xl);
+    padding-bottom: var(--padding-34xl);
     box-sizing: border-box;
   }
 }
@@ -522,13 +549,18 @@
   .column1 {
     min-width: 100%;
   }
-  .conditions,
   .content {
     gap: var(--gap-21xl);
   }
+  .contentWrapper {
+    padding-left: var(--padding-13xl);
+    padding-right: var(--padding-13xl);
+    box-sizing: border-box;
+  }
   .conditions {
+    gap: var(--gap-36xl);
     padding-top: var(--padding-28xl);
-    padding-bottom: var(--padding-28xl);
+    padding-bottom: var(--padding-15xl);
     box-sizing: border-box;
   }
 }
@@ -540,63 +572,33 @@
   .content {
     gap: var(--gap-xl);
   }
-  .bipolarDisorder {
-    font-size: var(--font-size-17xl);
-    line-height: 36px;
-  }
-  .images {
-    min-width: 100%;
-  }
-  .ocd {
-    font-size: var(--font-size-17xl);
-    line-height: 54px;
-  }
-  .images1 {
-    min-width: 100%;
-  }
-  .anxiety {
-    font-size: var(--font-size-17xl);
-    line-height: 54px;
-  }
-  .images2 {
-    min-width: 100%;
-  }
+  .anxiety,
+  .bipolarDisorder,
+  .ocd,
   .ptsd {
     font-size: var(--font-size-17xl);
-    line-height: 54px;
-  }
-  .images3 {
-    min-width: 100%;
-  }
-  .socialAnxiety {
-    font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .images4 {
-    min-width: 100%;
+  .anxiety,
+  .ocd,
+  .ptsd {
+    line-height: 54px;
   }
+  .adultAdhd,
+  .depression,
+  .socialAnxiety,
   .womensHealth {
     font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .images5 {
-    min-width: 100%;
-  }
+  .adultAdhd,
   .depression {
-    font-size: var(--font-size-17xl);
     line-height: 54px;
   }
-  .images6 {
-    min-width: 100%;
-  }
   .adultAdhd {
-    font-size: var(--font-size-17xl);
     line-height: 36px;
   }
-  .images7 {
-    min-width: 100%;
-  }
   .conditions {
-    gap: var(--gap-xl);
+    gap: var(--gap-8xl);
   }
 }
