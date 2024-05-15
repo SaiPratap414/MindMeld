@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
+import NavbarM from "./pages/NavbarM";
 import Mind from "./pages/Mind";
 import Mob from "./pages/Mob";
-
 
 function App() {
   const action = useNavigationType();
@@ -10,6 +10,7 @@ function App() {
   const pathname = location.pathname;
 
   const [isMobile, setIsMobile] = useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   useEffect(() => {
     if (action !== "POP") {
@@ -57,9 +58,24 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const toggleNavbar = () => {
+    setIsNavbarOpen((prevState) => !prevState);
+  };
+
+  const handleClick = () => {
+    // Handle click event for the hamburger icon
+    toggleNavbar(); // Toggle the state of the navbar
+  };
+
   return (
     <Routes>
-      <Route path="/" element={isMobile ? <Mob /> : <Mind />} />
+      <Route
+        path="/"
+        element={isMobile ? <Mob /> : <Mind />}
+      />
+      {isNavbarOpen && <NavbarM />}
+      {/* Render NavbarM only when isNavbarOpen is true */}
+      {/* Add other routes as needed */}
     </Routes>
   );
 }

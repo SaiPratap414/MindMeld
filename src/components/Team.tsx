@@ -19,7 +19,7 @@ const Team: FunctionComponent = () => {
       <div className={styles.content1}>
         <div className={styles.row}>
           <div className={styles.content2}>
-            <Card name1="Ektaa Chaudhary" jobTitle="Founder" />
+            <Card name1="Ektaa Chaudhary" jobTitle="Founder" image="/team1.jpg" /> {/* Pass image directly here */}
             <Card name1="Simran" jobTitle="Co-Founder" image="/team2.jpg" /> {/* Pass a different image for the second Card */}
           </div>
         </div>

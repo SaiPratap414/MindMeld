@@ -1,7 +1,14 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import styles from "./Mob.module.css";
+import NavbarM from './NavbarM'; 
 
 const Mob: FunctionComponent = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+   const handleClick = () => {
+    // Toggle the state of the navbar
+    setIsNavbarOpen((prevState) => !prevState);
+  };
   return (
     <div className={styles.mob}>
       <section className={styles.homepage}>
@@ -11,6 +18,7 @@ const Mob: FunctionComponent = () => {
           alt=""
           src="/placeholder-image@2x.png"
         />
+         {isNavbarOpen && <NavbarM />}
         <header className={styles.container}>
           <div className={styles.asset21Parent}>
             <img
@@ -29,14 +37,15 @@ const Mob: FunctionComponent = () => {
               <div className={styles.loremIpsumDolor}>Untangled Thoughts</div>
             </div>
           </div>
-          <div className={styles.icon}>
+          <button className={styles.icon} onClick={handleClick} aria-label="Open navigation menu">
+            {/* Hamburger Icon */}
             <img
               className={styles.cihamburgerMdIcon}
               loading="lazy"
               alt=""
               src="/cihamburgermd.svg"
             />
-          </div>
+          </button>
         </header>
         <div className={styles.content}>
           <div className={styles.column}>
