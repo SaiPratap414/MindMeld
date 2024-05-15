@@ -26,12 +26,11 @@ const Conditions: FunctionComponent = () => {
             <img
               className={styles.placeholderImageIcon}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/bd.png"
             />
           </div>
           <h1 className={styles.bipolarDisorder}>
-            <p className={styles.bipolar}>Bipolar</p>
-            <p className={styles.disorder}>Disorder</p>
+           
           </h1>
         </div>
         <div className={styles.wrapperPlaceholderImageGroup}>
@@ -39,42 +38,41 @@ const Conditions: FunctionComponent = () => {
             <img
               className={styles.placeholderImageIcon1}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/ocd.png"
             />
           </div>
-          <h1 className={styles.ocd}>OCD</h1>
+          
         </div>
         <div className={styles.wrapperPlaceholderImageContainer}>
           <div className={styles.wrapperPlaceholderImage2}>
             <img
               className={styles.placeholderImageIcon2}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/an.png"
             />
           </div>
-          <h1 className={styles.anxiety}>Anxiety</h1>
+          
         </div>
         <div className={styles.frameDiv}>
           <div className={styles.wrapperPlaceholderImage3}>
             <img
               className={styles.placeholderImageIcon3}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/pt.png"
             />
           </div>
-          <h1 className={styles.ptsd}>PTSD</h1>
+          
         </div>
         <div className={styles.wrapperPlaceholderImageParent1}>
           <div className={styles.wrapperPlaceholderImage4}>
             <img
               className={styles.placeholderImageIcon4}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/sa.png"
             />
           </div>
           <h1 className={styles.socialAnxiety}>
-            <p className={styles.social}>Social</p>
-            <p className={styles.anxiety1}>Anxiety</p>
+           
           </h1>
         </div>
         <div className={styles.wrapperPlaceholderImageParent2}>
@@ -82,12 +80,10 @@ const Conditions: FunctionComponent = () => {
             <img
               className={styles.placeholderImageIcon5}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/wh.png"
             />
           </div>
           <h1 className={styles.womensHealth}>
-            <p className={styles.womens}>Women’s</p>
-            <p className={styles.health}>Health</p>
           </h1>
         </div>
         <div className={styles.wrapperPlaceholderImageParent3}>
@@ -95,22 +91,20 @@ const Conditions: FunctionComponent = () => {
             <img
               className={styles.placeholderImageIcon6}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/d.png"
             />
           </div>
-          <h2 className={styles.depression}>Depression</h2>
+          
         </div>
         <div className={styles.wrapperPlaceholderImageParent4}>
           <div className={styles.wrapperPlaceholderImage7}>
             <img
               className={styles.placeholderImageIcon7}
               alt=""
-              src="/placeholder-image@2x.png"
+              src="/adad.png"
             />
           </div>
           <h1 className={styles.adultAdhd}>
-            <p className={styles.adult}>Adult</p>
-            <p className={styles.adhd}>ADHD</p>
           </h1>
         </div>
       </div>
