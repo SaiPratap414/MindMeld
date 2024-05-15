@@ -23,8 +23,8 @@
 }
 .name {
   font-size: var(--font-size-xl);
-  font-weight: 600;
-  color: var(--color-gray-200);
+  font-weight: 700;
+  color: var(--color-dodgerblue-200);
 }
 .bio,
 .jobTitle,
@@ -55,6 +55,7 @@
   font-size: var(--font-size-lg);
   color: var(--black);
   font-family: var(--font-rosario);
+  margin-left: 150px;
 }
 .name,
 .jobTitle {

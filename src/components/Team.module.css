@@ -1,10 +1,11 @@
 .heading {
   margin: 0;
-  position: relative;
   font-size: inherit;
   line-height: 58px;
   font-weight: 700;
   font-family: inherit;
+  text-align: center;
+  margin-left: 500px;
 }
 .content,
 .sectionTitle {
