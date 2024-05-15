@@ -19,6 +19,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   min-width: 400px;
+  margin-bottom: 50px;
 }
 .textSuspendisseVarius {
   flex: 1;
@@ -51,18 +52,20 @@
   align-self: stretch;
   padding: 0 var(--padding-45xl);
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 .placeholderImageIcon {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .wrapperPlaceholderImage {
   width: 416px;
   flex: 1;
@@ -108,15 +111,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon1 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage1 {
   width: 416px;
@@ -159,15 +162,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon2 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage2 {
   width: 416px;
@@ -210,15 +213,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon3 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage3 {
   width: 416px;
@@ -261,15 +264,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon4 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage4 {
   width: 416px;
@@ -316,15 +319,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon5 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage5 {
   width: 416px;
@@ -345,10 +348,10 @@
 }
 .womensHealth {
   margin: 0 !important;
-  width: 228px;
+  width: 190px;
   position: absolute;
   top: calc(50% - 60px);
-  left: calc(50% - 113.5px);
+  left: calc(50% - 94.5px);
   font-size: inherit;
   line-height: 100%;
   font-weight: 400;
@@ -361,7 +364,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 0;
   box-sizing: border-box;
@@ -371,15 +374,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon6 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage6 {
   width: 416px;
@@ -422,15 +425,15 @@
   max-width: 100%;
 }
 .placeholderImageIcon7 {
-  width: 100%;
+  width: 80%;
+  height: auto;
   flex: 1;
   flex-shrink: 0;
   object-fit: contain;
   position: absolute;
-  left: 0;
-  top: 4px;
-  height: 100%;
-  transform: scale(1.05);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapperPlaceholderImage7 {
   width: 416px;
@@ -466,7 +469,7 @@
 .content1,
 .wrapperPlaceholderImageParent4 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
   max-width: 100%;
@@ -482,7 +485,7 @@
 }
 .conditions,
 .content1 {
-  align-self: stretch;
+  align-self: flex-start;
 }
 .content1 {
   flex-direction: row;
@@ -491,7 +494,7 @@
   gap: 16px 14px;
   min-height: 656px;
   text-align: center;
-  font-size: var(--font-size-41xl);
+  font-size: var(--font-size-29xl);
   color: var(--color-tomato);
 }
 .conditions {

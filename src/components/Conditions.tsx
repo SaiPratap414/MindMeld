@@ -98,7 +98,7 @@ const Conditions: FunctionComponent = () => {
               src="/placeholder-image@2x.png"
             />
           </div>
-          <h1 className={styles.depression}>Depression</h1>
+          <h2 className={styles.depression}>Depression</h2>
         </div>
         <div className={styles.wrapperPlaceholderImageParent4}>
           <div className={styles.wrapperPlaceholderImage7}>
