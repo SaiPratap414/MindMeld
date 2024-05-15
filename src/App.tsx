@@ -1,16 +1,15 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
 import Mind from "./pages/Mind";
+import Mob from "./pages/Mob";
+
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
+
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (action !== "POP") {
@@ -43,10 +42,26 @@ function App() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 568); // Adjust the threshold as needed
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Routes>
-      <Route path="/" element={<Mind />} />
+      <Route path="/" element={isMobile ? <Mob /> : <Mind />} />
     </Routes>
   );
 }
+
 export default App;
