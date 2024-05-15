@@ -153,12 +153,21 @@ body {
   --padding-xl: 20px;
   --padding-base: 16px;
   --padding-45xl: 64px;
-  --padding-xs: 12px;
+  --padding-3xs: 10px;
+  --padding-4xl: 23px;
+  --padding-2xs-9: 10.9px;
   --padding-5xl: 24px;
   --padding-21xl: 40px;
   --padding-lg: 18px;
+  --padding-33xl: 52px;
+  --padding-21xl-7: 40.7px;
+  --padding-21xl-8: 40.8px;
+  --padding-mini: 15px;
+  --padding-5xs: 8px;
+  --padding-xs: 12px;
 
   /* Border radiuses */
   --br-5xs: 8px;
   --br-5xl: 24px;
 }
+
