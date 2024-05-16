@@ -40,11 +40,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .content2,
 .sectionTitleParent {
   gap: var(--gap-5xl);
   max-width: 100%;
+  flex: 1;
 }
 .content2 {
   width: 1312px;
@@ -55,6 +57,9 @@
   justify-content: flex-start;
   text-align: center;
   align-items: center;
+}
+.moveUp {
+  margin-top: -50px; /* Adjust the value as needed */
 }
 
 .content1,

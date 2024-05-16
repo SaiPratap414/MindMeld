@@ -4,7 +4,7 @@ import styles from "./Team.module.css";
 
 const Team: FunctionComponent = () => {
   return (
-    <section className={styles.team} id="team">
+    <section className={`${styles.team} ${styles.moveUp}`} id="team"> {/* Add moveUp class */}
       <div className={styles.sectionTitleParent}>
         <div className={styles.sectionTitle}>
           <div className={styles.content}>

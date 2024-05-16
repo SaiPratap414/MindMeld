@@ -122,7 +122,7 @@
   font-family: inherit;
 }
 .text2 {
-  align-self: stretch;
+  align-items: center;
   position: relative;
   font-size: var(--font-size-base);
   line-height: 150%;
@@ -139,6 +139,7 @@
   box-sizing: border-box;
   gap: var(--gap-base);
   max-width: 100%;
+  flex: 1;
 }
 .listItemParent {
   align-self: stretch;
@@ -273,7 +274,7 @@
 .listItemGroup {
   align-self: stretch;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--gap-5xl);
   max-width: 100%;
 }
