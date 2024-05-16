@@ -38,8 +38,8 @@
 .teamImage {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 .content2,
 .sectionTitleParent {
@@ -53,85 +53,10 @@
   box-sizing: border-box;
   gap: var(--gap-29xl);
   justify-content: flex-start;
-}
-.dot,
-.dot1,
-.dot2,
-.dot3,
-.dot4 {
-  height: 8px;
-  width: 8px;
-  position: relative;
-  border-radius: 50%;
-  background-color: var(--black);
-}
-.dot1,
-.dot2,
-.dot3,
-.dot4 {
-  background-color: var(--color-gray-100);
-}
-.dotsContainer,
-.sliderDots {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sliderDots {
-  flex-direction: row;
-  gap: var(--gap-5xs);
-}
-.dotsContainer {
-  flex-direction: column;
-  padding: var(--padding-xl) 0 0;
-}
-.icon {
-  height: 24px;
-  width: 24px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.button {
-  cursor: pointer;
-  border: 1px solid var(--black);
-  padding: var(--padding-xs) var(--padding-2xs);
-  background-color: transparent;
-  height: 48px;
-  width: 48px;
-  border-radius: var(--br-31xl);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
   align-items: center;
-  justify-content: center;
 }
-.icon1 {
-  height: 24px;
-  width: 24px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.button1 {
-  cursor: pointer;
-  border: 1px solid var(--black);
-  padding: var(--padding-xs) var(--padding-2xs);
-  background-color: transparent;
-  height: 48px;
-  width: 48px;
-  border-radius: var(--br-31xl);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.sliderButtons {
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: var(--gap-mini);
-}
+
 .content1,
 .content3,
 .row,

@@ -1490,17 +1490,22 @@
 .span,
 .span1 {
   color: var(--black);
+  align-items: center;
+  justify-content: center;
+
 }
 .text16 {
   position: relative;
   line-height: 150%;
+  align-items: center;
+  justify-content: center;
 }
 .footerParagraph {
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 0 25px 0 25.5px;
 }
 .sector116Noida,
@@ -1514,8 +1519,8 @@
 .footerContent,
 .footerRight {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 .footerContent {
   flex: 1;
