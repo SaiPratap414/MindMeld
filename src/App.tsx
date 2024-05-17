@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
-import NavbarM from "./pages/NavbarM";
 import Mind from "./pages/Mind";
 import Mob from "./pages/Mob";
 
@@ -73,7 +72,7 @@ function App() {
         path="/"
         element={isMobile ? <Mob /> : <Mind />}
       />
-      {isNavbarOpen && <NavbarM />}
+      
       {/* Render NavbarM only when isNavbarOpen is true */}
       {/* Add other routes as needed */}
     </Routes>

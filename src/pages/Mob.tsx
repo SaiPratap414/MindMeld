@@ -1,6 +1,5 @@
 import { FunctionComponent, useState } from "react";
 import styles from "./Mob.module.css";
-import NavbarM from './NavbarM'; 
 
 const Mob: FunctionComponent = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -18,7 +17,6 @@ const Mob: FunctionComponent = () => {
           alt=""
           src="/placeholder-image@2x.png"
         />
-         {isNavbarOpen && <NavbarM />}
         <header className={styles.container}>
           <div className={styles.asset21Parent}>
             <img
@@ -46,6 +44,15 @@ const Mob: FunctionComponent = () => {
               src="/cihamburgermd.svg"
             />
           </button>
+          {isNavbarOpen && (
+            <div className={styles.dropdownMenu}>
+              <button className={styles.dropdownButton}>Services</button>
+              <button className={styles.dropdownButton}>Experts</button>
+              <button className={styles.dropdownButton}>Offerings</button>
+              <button className={styles.dropdownButton}>Login</button>
+            </div>
+          )}
+
         </header>
         <div className={styles.content}>
           <div className={styles.column}>
