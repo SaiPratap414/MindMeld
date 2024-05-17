@@ -477,7 +477,7 @@ const Mob: FunctionComponent = () => {
           </div>
         </div>
       </section>
-      <section className={styles.team} id="team">
+      <section className={styles.team} id="team"> 
         <div className={styles.sectionTitle3}>
           <div className={styles.content7}>
             <h3 className={styles.heading17}>Our Founders</h3>
