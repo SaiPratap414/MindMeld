@@ -8,12 +8,14 @@ const Mob: FunctionComponent = () => {
     // Toggle the state of the navbar
     setIsNavbarOpen((prevState) => !prevState);
   };
-  const scrollToServices = () => {
-    const servicesSection = document.getElementById("services");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  
   return (
     <div className={styles.mob}>
       <section className={styles.homepage}>
@@ -52,9 +54,9 @@ const Mob: FunctionComponent = () => {
           </button>
           {isNavbarOpen && (
             <div className={styles.dropdownMenu}>
-              <button className={styles.dropdownButton} onClick={scrollToServices}>Services</button>
+               <button className={styles.dropdownButton} onClick={() => scrollToSection("services")}>Services</button>
+            <button className={styles.dropdownButton} onClick={() => scrollToSection("team")}>Experts</button>
 
-              <button className={styles.dropdownButton}>Experts</button>
               <button className={styles.dropdownButton}>Offerings</button>
               <button className={styles.dropdownButtonLogin}>
               <div className={styles.button1}>Login</div>
@@ -475,7 +477,7 @@ const Mob: FunctionComponent = () => {
           </div>
         </div>
       </section>
-      <section className={styles.team}>
+      <section className={styles.team} id="team">
         <div className={styles.sectionTitle3}>
           <div className={styles.content7}>
             <h3 className={styles.heading17}>Our Founders</h3>
