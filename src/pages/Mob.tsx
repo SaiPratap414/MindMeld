@@ -8,6 +8,12 @@ const Mob: FunctionComponent = () => {
     // Toggle the state of the navbar
     setIsNavbarOpen((prevState) => !prevState);
   };
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className={styles.mob}>
       <section className={styles.homepage}>
@@ -46,7 +52,8 @@ const Mob: FunctionComponent = () => {
           </button>
           {isNavbarOpen && (
             <div className={styles.dropdownMenu}>
-              <button className={styles.dropdownButton}>Services</button>
+              <button className={styles.dropdownButton} onClick={scrollToServices}>Services</button>
+
               <button className={styles.dropdownButton}>Experts</button>
               <button className={styles.dropdownButton}>Offerings</button>
               <button className={styles.dropdownButtonLogin}>
@@ -86,7 +93,7 @@ const Mob: FunctionComponent = () => {
           src="/layer-2.svg"
         />
       </section>
-      <section className={styles.services}>
+      <section id="services" className={styles.services}>
         <div className={styles.content1}>
           <div className={styles.sectionTitle}>
             <div className={styles.contentWrapper}>
